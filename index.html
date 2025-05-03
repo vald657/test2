@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-Link | Forfaits Internet pour Étudiants</title>
+    <link rel="stylesheet" href="./acceuil/styles.css">
+    <!-- Ajoutez cette ligne -->
+    <link rel="stylesheet" href="../dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête et Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-text">
+                <h1>H-LINK</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html" class="active">Accueil</a></li>
+                    <li><a href="forfaits/forfaits.html">Nos Forfaits</a></li>
+                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                    <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../compte/compte.html">Compte</a></li>
+                </ul>
+            </nav>
+            <!-- Ajoutez ce bouton -->
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-moon"></i>
+                <span id="theme-text">Mode nuit</span>
+            </button>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero pro-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>H-Link</h1>
+                <h2>Internet Haut Débit pour Étudiants</h2>
+                <p>Des forfaits adaptés à votre budget et à vos besoins académiques</p>
+                <div class="hero-buttons">
+                    <a href="../forfaits/forfaits.html" class="btn btn-primary1">Voir les forfaits</a>
+                    <a href="../comment-ca-marche/comment-ca-marche.html" class="btn btn-secondary1">Comment ça marche</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="Étudiant utilisant internet">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pourquoi choisir H-Link ?</h2>
+                <p>Des avantages conçus spécialement pour les étudiants</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Haut Débit Fiable</h3>
+                    <p>Connexion ultra-rapide pour vos cours en ligne, recherches et divertissement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-franc-sign"></i>
+                    </div>
+                    <h3>Prix Étudiant</h3>
+                    <p>Tarifs préférentiels sur présentation de votre carte étudiante.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Sans Engagement</h3>
+                    <p>Forfaits flexibles adaptés au rythme de l'année universitaire.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support Dédié</h3>
+                    <p>Assistance technique 7j/7 pour vous aider en cas de problème.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Forfaits Populaires -->
+    <section class="popular-plans">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Forfaits Populaires</h2>
+                <p>Trouvez l'offre qui correspond à vos besoins</p>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="plan-price">
+                            <span class="price">2000₣</span>
+                            <span class="period">/semaine</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 Mbps</li>
+                            <li><i class="fas fa-check"></i> Un appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique basique</li>
+                            <li><i class="fas fa-times"></i> Services additionnels</li>
+                            <li><i class="fas fa-times"></i> IP fixe</li>
+                        </ul>
+                    </div>
+                    <a href="../forfaits/forfaits.html#starter" class="btn btn-outline offer">Choisir ce forfait</a>
+                </div>
+                
+                <div class="plan-card featured">
+                    <div class="plan-badge">Le plus populaire</div>
+                    <div class="plan-header">
+                        <h3>Medium</h3>
+                        <div class="plan-price">
+                            <span class="price">5000₣</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 2 Mbps</li>
+                            <li><i class="fas fa-check"></i> Un appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique prioritaire</li>
+                            <li><i class="fas fa-check"></i> Services additionnels</li>
+                            <li><i class="fas fa-times"></i> IP fixe</li>
+                        </ul>
+                    </div>
+                    <a href="../forfaits/forfaits.html#medium" class="btn btn-primary">Choisir ce forfait</a>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">10000₣</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 5 Mbps</li>
+                            <li><i class="fas fa-check"></i> Deux appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique VIP</li>
+                            <li><i class="fas fa-check"></i> Services additionnels</li>
+                            <li><i class="fas fa-check"></i> IP fixe</li>
+                        </ul>
+                    </div>
+                    <a href="../forfaits/forfaits.html#premium" class="btn btn-outline">Choisir ce forfait</a>
+                </div>
+
+                
+            </div>
+            <div class="plans-footer">
+                <a href="../forfaits/forfaits.html" class="btn btn-secondary">Voir tous nos forfaits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Comment ça marche -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comment ça marche ?</h2>
+                <p>Obtenez votre connexion en 3 étapes simples</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choisissez votre forfait</h3>
+                        <p>Sélectionnez l'offre qui correspond le mieux à vos besoins et à votre budget.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Vérifiez votre éligibilité</h3>
+                        <p>Confirmez que votre logement est éligible signalant votre localisation</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Profitez de votre connexion</h3>
+                        <p>Nous validons votre connexion et vous êtes prêt à surfer !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-footer">
+                <a href="../comment-ca-marche/comment-ca-marche.html" class="btn btn-primary">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que disent nos clients</h2>
+                <p>Des étudiants satisfaits partout en France</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Parfait pour mes cours en ligne et pour regarder des séries. La connexion est stable même aux heures de pointe !"</p>
+                        <div class="testimonial-author">
+                            <h4>Marie D.</h4>
+                            <p>Étudiante en droit, Paris</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Le forfait Ultimate personnalisé est idéal pour notre colocation de 4 étudiants. Nous pouvons tous être connectés en même temps sans problème."</p>
+                        <div class="testimonial-author">
+                            <h4>Thomas L.</h4>
+                            <p>Étudiant en informatique, Lyon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Installation rapide et service client très réactif. Le prix étudiant fait vraiment la différence pour mon budget serré."</p>
+                        <div class="testimonial-author">
+                            <h4>Sophie M.</h4>
+                            <p>Étudiante en médecine, Bordeaux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Tout ce que vous devez savoir sur nos services</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quels documents dois-je fournir pour bénéficier du tarif étudiant ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour bénéficier de nos tarifs étudiants, vous devez nous fournir une copie de votre carte étudiante valide pour l'année universitaire en cours, ainsi qu'un justificatif de domicile de moins de 3 mois.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je résilier mon abonnement pendant les vacances d'été ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nos forfaits sont sans engagement. Vous pouvez suspendre ou résilier votre abonnement pendant les périodes où vous n'êtes pas dans votre logement étudiant, comme les vacances d'été.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps prend l'installation ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'installation prend généralement entre 1 et 2 heures. Nos techniciens s'occupent de tout, de la connexion à la configuration de votre réseau Wi-Fi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Est-ce que je peux partager mon abonnement avec mes colocataires ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Nos forfaits Premium et Ultimate sont spécialement conçus pour les colocations. Vous pouvez partager votre connexion avec tous les membres de votre logement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-footer">
+                <a href="../contact/contact.html" class="btn btn-secondary">Poser une question</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à booster votre connexion ?</h2>
+                <p>Profitez de nos offres spéciales pour la rentrée universitaire !</p>
+                <a href="../forfaits/forfaits.html" class="btn btn-primary">Voir les offres</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text botom">H-LINK</h2>
+                    <p>Internet haut débit pour étudiants</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                        <li><a href="../professionnel/professionnel.html">professionnel</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../compte/compte.html">Compte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>                            
+                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../conf/script.js"></script>
+    <script src="../dark-mode/theme-switcher.js"></script>
+    
+</body>
+</html>

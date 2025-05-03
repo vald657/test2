@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions Professionnelles | H-Link</title>
+    <link rel="stylesheet" href="../acceuil/styles.css">
+    <link rel="stylesheet" href="../professionnel/Professionnel.css">
+    <link rel="stylesheet" href="../dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête et Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-text">
+                <h1>H-LINK</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                    <li><a href="../professionnel/professionnel.html" class="active">Professionnel</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../compte/compte.html">Compte</a></li>
+                </ul>
+            </nav>
+            <!-- Bouton de basculement de thème -->
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-moon"></i>
+                <span id="theme-text">Mode nuit</span>
+            </button>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero pro-hero">
+        <div class="container">
+            <h1>Solutions Internet Professionnelles</h1>
+            <p>Des connexions haut débit fiables et sécurisées pour votre entreprise</p>
+        </div>
+    </section>
+
+    <!-- Section Avantages Professionnels -->
+    <section class="pro-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pourquoi choisir H-Link Business ?</h2>
+                <p>Des solutions adaptées aux besoins spécifiques de votre entreprise</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Connexion Ultra-rapide</h3>
+                    <p>Bénéficiez de débits symétriques jusqu'à 1 Gbps pour des transferts de données rapides et efficaces.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sécurité Renforcée</h3>
+                    <p>Protection avancée contre les cybermenaces avec pare-feu dédié et surveillance 24/7.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Infrastructure Dédiée</h3>
+                    <p>Réseau privé et équipements dédiés pour garantir performances et confidentialité.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support Prioritaire</h3>
+                    <p>Assistance technique dédiée avec temps de réponse garanti par SLA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Solutions Professionnelles -->
+    <section class="pro-solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Solutions Business</h2>
+                <p>Des offres adaptées à la taille et aux besoins de votre entreprise</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <h3>Startup</h3>
+                        <p class="solution-subtitle">Pour les petites entreprises</p>
+                    </div>
+                    <div class="solution-price">
+                        <span class="price">50 000₣</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <div class="solution-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Débit jusqu'à 100 Mbps</li>
+                            <li><i class="fas fa-check"></i> Jusqu'à 10 postes connectés</li>
+                            <li><i class="fas fa-check"></i> 1 adresse IP fixe</li>
+                            <li><i class="fas fa-check"></i> Support technique 6j/7</li>
+                            <li><i class="fas fa-check"></i> Installation professionnelle incluse</li>
+                            <li><i class="fas fa-times"></i> Réseau Wi-Fi maillé</li>
+                            <li><i class="fas fa-times"></i> Pare-feu avancé</li>
+                        </ul>
+                    </div>
+                    <a href="../contact/contact.html?solution=startup" class="btn btn-outline">Demander un devis</a>
+                </div>
+                
+                <div class="solution-card featured">
+                    <div class="solution-badge">Le plus populaire</div>
+                    <div class="solution-header">
+                        <h3>Business</h3>
+                        <p class="solution-subtitle">Pour les PME</p>
+                    </div>
+                    <div class="solution-price">
+                        <span class="price">100 000₣</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <div class="solution-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Débit jusqu'à 500 Mbps</li>
+                            <li><i class="fas fa-check"></i> Jusqu'à 50 postes connectés</li>
+                            <li><i class="fas fa-check"></i> 5 adresses IP fixes</li>
+                            <li><i class="fas fa-check"></i> Support technique 7j/7</li>
+                            <li><i class="fas fa-check"></i> Installation professionnelle incluse</li>
+                            <li><i class="fas fa-check"></i> Réseau Wi-Fi maillé</li>
+                            <li><i class="fas fa-check"></i> Pare-feu avancé</li>
+                        </ul>
+                    </div>
+                    <a href="../contact/contact.html?solution=business" class="btn btn-primary">Demander un devis</a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <h3>Enterprise</h3>
+                        <p class="solution-subtitle">Pour les grandes entreprises</p>
+                    </div>
+                    <div class="solution-price">
+                        <span class="price">Sur mesure</span>
+                    </div>
+                    <div class="solution-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Débit jusqu'à 1 Gbps symétrique</li>
+                            <li><i class="fas fa-check"></i> Nombre illimité de postes</li>
+                            <li><i class="fas fa-check"></i> Bloc d'adresses IP dédié</li>
+                            <li><i class="fas fa-check"></i> Support technique VIP 24/7</li>
+                            <li><i class="fas fa-check"></i> Installation et configuration sur mesure</li>
+                            <li><i class="fas fa-check"></i> Réseau Wi-Fi maillé haute performance</li>
+                            <li><i class="fas fa-check"></i> Solution de sécurité complète</li>
+                        </ul>
+                    </div>
+                    <a href="../contact/contact.html?solution=enterprise" class="btn btn-outline">Demander un devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services Additionnels -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services Additionnels</h2>
+                <p>Personnalisez votre solution avec nos services complémentaires</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Téléphonie IP</h3>
+                        <p>Solution de téléphonie professionnelle intégrée à votre réseau internet.</p>
+                        <p class="service-price">À partir de 15 000₣/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cloud Privé</h3>
+                        <p>Stockage et services cloud sécurisés pour vos données sensibles.</p>
+                        <p class="service-price">À partir de 25 000₣/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Visioconférence</h3>
+                        <p>Solution de visioconférence haute définition avec salles virtuelles dédiées.</p>
+                        <p class="service-price">À partir de 20 000₣/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cybersécurité Avancée</h3>
+                        <p>Protection renforcée contre les menaces avec audit et monitoring continu.</p>
+                        <p class="service-price">À partir de 30 000₣/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>TV & Streaming</h3>
+                        <p>Accédez à plus de 100 chaînes TV et plateformes de streaming</p>
+                        <p class="add-on-price">+5,99€/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>Téléphonie Illimitée</h3>
+                        <p>Appels illimités vers les fixes et mobiles en France</p>
+                        <p class="add-on-price">+3,99€/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>Sécurité Premium</h3>
+                        <p>Protection antivirus et VPN pour tous vos appareils</p>
+                        <p class="add-on-price">+4,99€/mois</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>Wi-Fi Booster</h3>
+                        <p>Amplificateur Wi-Fi pour une couverture optimale dans tout votre logement</p>
+                        <p class="add-on-price">+2,99€/mois</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Processus d'Installation -->
+    <section class="installation-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Processus d'Installation</h2>
+                <p>Une mise en place professionnelle en 4 étapes</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Audit et Consultation</h3>
+                        <p>Nos experts analysent vos besoins et l'infrastructure existante pour proposer la solution optimale.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planification</h3>
+                        <p>Élaboration d'un plan détaillé d'installation et de configuration adapté à vos locaux.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Installation</h3>
+                        <p>Mise en place de l'infrastructure réseau par nos techniciens certifiés avec un minimum de perturbation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Formation et Support</h3>
+                        <p>Formation de votre équipe et mise en place d'un support continu pour assurer le bon fonctionnement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Demande de Devis -->
+    <section class="quote-request">
+        <div class="container">
+            <div class="section-header">
+                <h2>Demandez un Devis Personnalisé</h2>
+                <p>Nos experts vous contacteront pour élaborer la solution adaptée à vos besoins</p>
+            </div>
+            <div class="quote-form-container">
+                <form class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-name">Nom de l'entreprise</label>
+                            <input type="text" id="company-name" placeholder="Votre entreprise" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-name">Nom du contact</label>
+                            <input type="text" id="contact-name" placeholder="Votre nom" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email professionnel</label>
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" placeholder="Votre numéro de téléphone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-size">Taille de l'entreprise</label>
+                            <select id="company-size" required>
+                                <option value="" disabled selected>Sélectionnez</option>
+                                <option value="1-10">1-10 employés</option>
+                                <option value="11-50">11-50 employés</option>
+                                <option value="51-200">51-200 employés</option>
+                                <option value="201+">201+ employés</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget mensuel estimé</label>
+                            <select id="budget" required>
+                                <option value="" disabled selected>Sélectionnez</option>
+                                <option value="<50k">Moins de 50 000₣</option>
+                                <option value="50-100k">50 000₣ - 100 000₣</option>
+                                <option value="100-200k">100 000₣ - 200 000₣</option>
+                                <option value="200k+">Plus de 200 000₣</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="requirements">Besoins spécifiques</label>
+                        <textarea id="requirements" rows="5" placeholder="Décrivez vos besoins en connectivité et services associés"></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">J'accepte que mes informations soient utilisées pour me contacter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ils nous font confiance</h2>
+                <p>Découvrez ce que nos clients professionnels disent de nos services</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Depuis que nous avons fait appel à H-Link pour notre infrastructure réseau, nos problèmes de connectivité appartiennent au passé. Un service impeccable et un support réactif."</p>
+                        <div class="testimonial-author">
+                            <h4>Jean Dupont</h4>
+                            <p>Directeur IT, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"La solution sur mesure proposée par H-Link a parfaitement répondu aux besoins spécifiques de notre cabinet d'avocats. La sécurité et la confidentialité de nos données sont assurées."</p>
+                        <div class="testimonial-author">
+                            <h4>Marie Laurent</h4>
+                            <p>Associée, Cabinet Laurent & Associés</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Notre hôtel nécessitait une solution Wi-Fi performante pour nos clients et une infrastructure solide pour notre gestion. H-Link a dépassé nos attentes avec une installation rapide et efficace."</p>
+                        <div class="testimonial-author">
+                            <h4>Pierre Moreau</h4>
+                            <p>Directeur, Hôtel Le Magnifique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Réponses aux questions les plus courantes sur nos solutions professionnelles</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quel est le délai d'installation pour une solution professionnelle ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le délai d'installation varie selon la complexité de votre projet et la taille de votre entreprise. Pour une petite structure, comptez environ 1 semaine. Pour des installations plus importantes, le délai peut aller jusqu'à 3-4 semaines. Nous établissons un planning précis lors de la phase de consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des solutions de redondance en cas de panne ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons des solutions de redondance pour garantir la continuité de votre activité. Cela peut inclure des connexions de secours via différentes technologies (fibre secondaire, 4G/5G), des équipements redondants, et des systèmes d'alimentation de secours. Ces options sont disponibles pour tous nos forfaits professionnels.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment est assuré le support technique pour les entreprises ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos clients professionnels bénéficient d'un support technique dédié avec des temps de réponse garantis par SLA (Service Level Agreement). Selon votre forfait, vous avez accès à une assistance 6j/7 ou 24/7 via une ligne prioritaire, email et système de tickets. Pour les offres Enterprise, un technicien dédié est assigné à votre compte.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Pouvez-vous gérer la migration depuis notre fournisseur actuel ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument. Nous prenons en charge l'intégralité du processus de migration pour assurer une transition sans interruption de service. Nos équipes coordonnent le changement avec votre fournisseur actuel, planifient l'installation en dehors des heures de travail si nécessaire, et s'assurent que tous vos services sont correctement configurés avant la bascule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à booster la connectivité de votre entreprise ?</h2>
+                <p>Contactez-nous dès aujourd'hui pour une consultation gratuite</p>
+                <a href="../contact/contact.html?type=pro" class="btn btn-primary">Contacter un expert</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text botom">H-LINK</h2>
+                    <p>Solutions internet pour particuliers et professionnels</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                        <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../compte/compte.html">Compte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>                            
+                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../conf/script.js"></script>
+    <script src="../dark-mode/theme-switcher.js"></script>
+    
+</body>
+</html>

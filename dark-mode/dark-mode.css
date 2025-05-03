@@ -1,0 +1,315 @@
+/* Styles pour le mode sombre */
+:root.dark-theme {
+    --text-black: #f0f0f0;
+    --night-blue: #1a2530;
+    --primary-color: #4dabf7;
+    --grey: #a0a0a0;
+    --font-white: #1a1a1a;
+    --white: #121212;
+    --mid-blue: #3498db;
+    --mid-white: #2a2a2a;
+    --accent-yellow: #ffd700;
+    --card-bg: #1e1e1e;
+    --header-bg: #121212;
+    --footer-bg: #0a1622;
+    --border-color: #333;
+}
+
+/* Base styles */
+:root.dark-theme body {
+    background-color: var(--white);
+    color: var(--text-black);
+}
+
+/* Header */
+:root.dark-theme header {
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+:root.dark-theme .nav-links a {
+    color: var(--text-black);
+}
+
+:root.dark-theme .nav-links a:hover,
+:root.dark-theme .nav-links a.active {
+    color: var(--primary-color);
+}
+
+:root.dark-theme .burger-menu div {
+    background-color: var(--text-black);
+}
+
+/* Hero Section */
+:root.dark-theme .hero {
+    background-color: var(--font-white);
+}
+
+:root.dark-theme .hero-content h1,
+:root.dark-theme .hero-content h2 {
+    color: var(--text-black);
+}
+
+:root.dark-theme .hero-content p {
+    color: var(--grey);
+}
+
+/* Features Section */
+:root.dark-theme .features {
+    background-color: var(--white);
+}
+
+:root.dark-theme .section-header h2 {
+    color: var(--text-black);
+}
+
+:root.dark-theme .feature-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-theme .service-content h3,
+:root.dark-theme .feature-card h3 {
+    color: var(--text-black);
+}
+
+:root.dark-theme .feature-card p {
+    color: var(--grey);
+}
+
+/* Plans Section */
+:root.dark-theme .popular-plans {
+    background-color: var(--font-white);
+}
+
+:root.dark-theme .plan-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-theme .plan-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root.dark-theme .solution-header h3,
+:root.dark-theme .plan-header h3 {
+    color: var(--text-black);
+}
+
+:root.dark-theme .plan-price .price {
+    color: var(--primary-color);
+}
+
+:root.dark-theme .plan-price .period {
+    color: var(--grey);
+}
+
+/* How it works */
+:root.dark-theme .how-it-works {
+    background-color: var(--white);
+}
+
+:root.dark-theme .step-content h3 {
+    color: var(--text-black);
+}
+
+/* Testimonials */
+:root.dark-theme .testimonials {
+    background-color: var(--font-white);
+}
+
+:root.dark-theme .testimonial-content {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-theme .testimonial-author h4 {
+    color: var(--text-black);
+}
+
+/* FAQ */
+:root.dark-theme .faq {
+    background-color: var(--white);
+}
+
+:root.dark-theme .faq-item {
+    border: 1px solid var(--border-color);
+}
+
+:root.dark-theme .faq-question {
+    background-color: var(--card-bg);
+}
+
+:root.dark-theme .faq-question h3 {
+    color: var(--text-black);
+}
+
+/* CTA */
+:root.dark-theme .cta {
+    background-color: var(--night-blue);
+}
+
+/* Footer */
+:root.dark-theme footer {
+    background-color: var(--footer-bg);
+}
+
+:root.dark-theme .footer-links h3:after,
+:root.dark-theme .footer-contact h3:after {
+    background-color: var(--primary-color);
+}
+
+:root.dark-theme .footer-links a:hover {
+    color: var(--primary-color);
+}
+
+:root.dark-theme .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Page Hero */
+:root.dark-theme .page-hero {
+    background-color: var(--night-blue);
+}
+
+/* Process Timeline (Comment ça marche page) */
+:root.dark-theme .process-timeline::before {
+    background-color: var(--primary-color);
+}
+
+:root.dark-theme .timeline-content {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-theme .timeline-content h3 {
+    color: var(--text-black);
+}
+
+/* Eligibility Form */
+:root.dark-theme .eligibility {
+    background-color: var(--font-white);
+}
+
+:root.dark-theme .eligibility-form {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-theme .form-group label {
+    color: var(--text-black);
+}
+
+:root.dark-theme .form-group input[type="text"],
+:root.dark-theme .form-group input[type="email"],
+:root.dark-theme .form-group input[type="tel"],
+:root.dark-theme .form-group select,
+:root.dark-theme .form-group textarea {
+    background-color: var(--mid-white);
+    border: 1px solid var(--border-color);
+    color: var(--text-black);
+}
+
+:root.dark-theme .file-label {
+    background-color: var(--mid-white);
+    border: 1px dashed var(--border-color);
+}
+
+/* Contact Page */
+:root.dark-theme .contact-form-container {
+    background-color: var(--card-bg);
+}
+
+:root.dark-theme .info-content h3 {
+    color: var(--text-black);
+}
+
+:root.dark-theme .social-icons a {
+    background-color: var(--mid-white);
+    color: var(--primary-color);
+}
+
+:root.dark-theme .social-icons a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Forfaits Page */
+:root.dark-theme .filter-btn {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-black);
+}
+
+:root.dark-theme .filter-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+:root.dark-theme .comparison-table th {
+    background-color: var(--night-blue);
+    color: var(--text-black);
+}
+
+:root.dark-theme .comparison-table td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root.dark-theme .comparison-table tr:hover {
+    background-color: var(--mid-white);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+:root.dark-theme .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.theme-toggle span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+:root.dark-theme .theme-toggle i,
+:root.dark-theme .theme-toggle span {
+    color: var(--text-black);
+}
+
+.comparison-table i,
+.support-text h3 {
+    color: var(--text-black);
+}
+
+@media (max-width: 768px) {
+    .theme-toggle span {
+        display: none;
+    }
+
+    .theme-toggle i {
+        margin-right: 0;
+    }
+
+    .theme-toggle {
+        margin-left: 10px;
+    }
+}

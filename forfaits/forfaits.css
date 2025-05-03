@@ -1,0 +1,166 @@
+/* Styles spécifiques à la page des forfaits */
+
+:root {
+    --primary-color: #3498db;
+    --night-blue: #2c3e50;
+    --mid-white: #eee;
+    --font-white: #f8f8f8;
+    --low-white: #ddd;
+}
+
+.plans-comparison {
+    background-color: var(--font-white);
+}
+
+/* Filtres des forfaits */
+.plans-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid var(--low-white);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.filter-btn:hover:not(.active) {
+    background-color: var(--mid-white);
+}
+
+/* Grille des forfaits */
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Options additionnelles */
+.add-ons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.add-on-card {
+    background-color: var(--font-white);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-on-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-on-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.add-on-content {
+    flex: 1;
+}
+
+.add-on-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--night-blue);
+}
+
+.add-on-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+/* Tableau de comparaison technique */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--mid-white);
+}
+
+.comparison-table th {
+    background-color: var(--font-white);
+    font-weight: 600;
+    color: var(--night-blue);
+}
+
+.comparison-table tr:hover {
+    background-color: var(--font-white);
+}
+
+.comparison-table th:first-child, .comparison-table td:first-child {
+    font-weight: 600;
+}
+
+/* Plan Footer */
+.plan-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .add-on-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .add-on-icon {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .plan-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

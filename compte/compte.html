@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte | H-Link</title>
+    <link rel="stylesheet" href="../acceuil/styles.css">
+    <link rel="stylesheet" href="../compte/compte.css">
+    <link rel="stylesheet" href="../dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête et Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-text">
+                <h1>H-LINK</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                    <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../compte/compte.html" class="active">Compte</a></li>
+                </ul>
+            </nav>
+            <!-- Bouton de basculement de thème -->
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-moon"></i>
+                <span id="theme-text">Mode nuit</span>
+            </button>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero pro-hero">
+        <div class="container">
+            <h1>Gérez votre compte</h1>
+            <p>Accédez en temps réel à toutes les infos relatives a votre compte</p>
+        </div>
+    </section>
+
+    <!-- Section Dashboard -->
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="user-welcome">
+                    <h1>Bienvenue, Thomas</h1>
+                    <p>Gérez votre compte et vos services H-Link</p>
+                </div>
+                <div class="account-status">
+                    <span class="status-badge active">Compte actif</span>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Sidebar de navigation -->
+                <div class="dashboard-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <img src="https://via.placeholder.com/80" alt="Photo de profil">
+                        </div>
+                        <div class="user-info">
+                            <h3>Thomas Dubois</h3>
+                            <p>Client depuis Janvier 2025</p>
+                        </div>
+                    </div>
+                    <nav class="dashboard-nav">
+                        <ul>
+                            <li class="active"><a href="#overview"><i class="fas fa-home"></i> Vue d'ensemble</a></li>
+                            <li><a href="#subscription"><i class="fas fa-wifi"></i> Mon forfait</a></li>
+                            <li><a href="#billing"><i class="fas fa-file-invoice"></i> Facturation</a></li>
+                            <li><a href="#support"><i class="fas fa-headset"></i> Support</a></li>
+                            <li><a href="#profile"><i class="fas fa-user"></i> Profil</a></li>
+                            <li><a href="#settings"><i class="fas fa-cog"></i> Paramètres</a></li>
+                            <li class="logout"><a href="#logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Contenu principal -->
+                <div class="dashboard-content">
+                    <!-- Section Vue d'ensemble -->
+                    <div id="overview" class="dashboard-section active">
+                        <div class="section-title">
+                            <h2>Vue d'ensemble</h2>
+                        </div>
+
+                        <div class="overview-cards">
+                            <div class="overview-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Forfait actuel</h3>
+                                    <p class="card-value">Premium</p>
+                                    <p class="card-info">Renouvellement le 15/06/2025</p>
+                                </div>
+                            </div>
+                            <div class="overview-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Vitesse actuelle</h3>
+                                    <p class="card-value">5 Mbps</p>
+                                    <p class="card-info">Dernière mesure: aujourd'hui à 14:30</p>
+                                </div>
+                            </div>
+                            <div class="overview-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Prochaine facture</h3>
+                                    <p class="card-value">10 000₣</p>
+                                    <p class="card-info">Échéance: 15/06/2025</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="usage-summary">
+                            <div class="section-subtitle">
+                                <h3>Consommation Internet</h3>
+                            </div>
+                            <div class="usage-chart">
+                                <div class="chart-container">
+                                    <div class="chart-bar">
+                                        <div class="chart-fill" style="width: 65%;"></div>
+                                    </div>
+                                    <div class="chart-labels">
+                                        <span>0</span>
+                                        <span>50%</span>
+                                        <span>100%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-info">
+                                    <p>Vous avez utilisé <strong>65%</strong> de votre forfait ce mois-ci</p>
+                                    <p class="chart-detail">Période: 15/05/2025 - 15/06/2025</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recent-activities">
+                            <div class="section-subtitle">
+                                <h3>Activités récentes</h3>
+                            </div>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Paiement reçu</h4>
+                                        <p>Votre paiement de 10 000₣ a été reçu</p>
+                                        <span class="activity-date">15/05/2025</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Forfait renouvelé</h4>
+                                        <p>Votre forfait Premium a été renouvelé</p>
+                                        <span class="activity-date">15/05/2025</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Ticket de support</h4>
+                                        <p>Ticket #12345 - "Problème de connexion" - Résolu</p>
+                                        <span class="activity-date">10/05/2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Mon forfait -->
+                    <div id="subscription" class="dashboard-section">
+                        <div class="section-title">
+                            <h2>Mon forfait</h2>
+                        </div>
+
+                        <div class="current-plan">
+                            <div class="plan-header">
+                                <div class="plan-info">
+                                    <h3>Premium</h3>
+                                    <p>Actif depuis le 15/02/2025</p>
+                                </div>
+                                <div class="plan-actions">
+                                    <a href="#upgrade" class="btn btn-outline">Changer de forfait</a>
+                                </div>
+                            </div>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Vitesse</span>
+                                    <span class="detail-value">5 Mbps</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Appareils connectés</span>
+                                    <span class="detail-value">2/2</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Support technique</span>
+                                    <span class="detail-value">VIP</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">IP fixe</span>
+                                    <span class="detail-value">Oui</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Tarif mensuel</span>
+                                    <span class="detail-value">10 000₣</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Prochain renouvellement</span>
+                                    <span class="detail-value">15/06/2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="connected-devices">
+                            <div class="section-subtitle">
+                                <h3>Appareils connectés</h3>
+                            </div>
+                            <div class="devices-list">
+                                <div class="device-item">
+                                    <div class="device-icon">
+                                        <i class="fas fa-laptop"></i>
+                                    </div>
+                                    <div class="device-info">
+                                        <h4>MacBook Pro</h4>
+                                        <p>Dernière connexion: Aujourd'hui à 15:45</p>
+                                        <p class="device-ip">192.168.1.2</p>
+                                    </div>
+                                    <div class="device-actions">
+                                        <button class="btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                                <div class="device-item">
+                                    <div class="device-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="device-info">
+                                        <h4>iPhone 13</h4>
+                                        <p>Dernière connexion: Aujourd'hui à 16:20</p>
+                                        <p class="device-ip">192.168.1.3</p>
+                                    </div>
+                                    <div class="device-actions">
+                                        <button class="btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upgrade-options">
+                            <div class="section-subtitle">
+                                <h3>Options de mise à niveau</h3>
+                            </div>
+                            <div class="upgrade-cards">
+                                <div class="upgrade-card">
+                                    <div class="upgrade-header">
+                                        <h4>Ultimate</h4>
+                                        <p class="upgrade-price">20 000₣/mois</p>
+                                    </div>
+                                    <div class="upgrade-features">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> 25 Mbps</li>
+                                            <li><i class="fas fa-check"></i> 5 appareils connectés</li>
+                                            <li><i class="fas fa-check"></i> Support prioritaire</li>
+                                            <li><i class="fas fa-check"></i> IP fixe</li>
+                                        </ul>
+                                    </div>
+                                    <div class="upgrade-action">
+                                        <a href="#upgrade-ultimate" class="btn btn-primary">Passer à Ultimate</a>
+                                    </div>
+                                </div>
+                                <div class="upgrade-card">
+                                    <div class="upgrade-header">
+                                        <h4>Wi-Fi Booster</h4>
+                                        <p class="upgrade-price">+2 000₣/mois</p>
+                                    </div>
+                                    <div class="upgrade-features">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Amplification du signal Wi-Fi</li>
+                                            <li><i class="fas fa-check"></i> Couverture étendue</li>
+                                            <li><i class="fas fa-check"></i> Installation incluse</li>
+                                        </ul>
+                                    </div>
+                                    <div class="upgrade-action">
+                                        <a href="#add-booster" class="btn btn-outline">Ajouter cette option</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Facturation -->
+                    <div id="billing" class="dashboard-section">
+                        <div class="section-title">
+                            <h2>Facturation</h2>
+                        </div>
+
+                        <div class="payment-method">
+                            <div class="section-subtitle">
+                                <h3>Mode de paiement</h3>
+                            </div>
+                            <div class="payment-card">
+                                <div class="card-info">
+                                    <div class="card-icon">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="card-details">
+                                        <h4>Carte Visa</h4>
+                                        <p>**** **** **** 4567</p>
+                                        <p>Expire: 09/2027</p>
+                                    </div>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-outline btn-sm">Modifier</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="billing-history">
+                            <div class="section-subtitle">
+                                <h3>Historique des factures</h3>
+                            </div>
+                            <div class="billing-table-container">
+                                <table class="billing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>N° Facture</th>
+                                            <th>Description</th>
+                                            <th>Montant</th>
+                                            <th>Statut</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>15/05/2025</td>
+                                            <td>INV-2025-0123</td>
+                                            <td>Forfait Premium - Mai 2025</td>
+                                            <td>10 000₣</td>
+                                            <td><span class="status-badge paid">Payée</span></td>
+                                            <td><a href="#" class="btn-link"><i class="fas fa-download"></i> PDF</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/04/2025</td>
+                                            <td>INV-2025-0098</td>
+                                            <td>Forfait Premium - Avril 2025</td>
+                                            <td>10 000₣</td>
+                                            <td><span class="status-badge paid">Payée</span></td>
+                                            <td><a href="#" class="btn-link"><i class="fas fa-download"></i> PDF</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/03/2025</td>
+                                            <td>INV-2025-0076</td>
+                                            <td>Forfait Premium - Mars 2025</td>
+                                            <td>10 000₣</td>
+                                            <td><span class="status-badge paid">Payée</span></td>
+                                            <td><a href="#" class="btn-link"><i class="fas fa-download"></i> PDF</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/02/2025</td>
+                                            <td>INV-2025-0042</td>
+                                            <td>Forfait Premium - Février 2025</td>
+                                            <td>10 000₣</td>
+                                            <td><span class="status-badge paid">Payée</span></td>
+                                            <td><a href="#" class="btn-link"><i class="fas fa-download"></i> PDF</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Support -->
+                    <div id="support" class="dashboard-section">
+                        <div class="section-title">
+                            <h2>Support technique</h2>
+                        </div>
+
+                        <div class="support-options">
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-ticket-alt"></i>
+                                </div>
+                                <h3>Créer un ticket</h3>
+                                <p>Soumettez une demande d'assistance pour tout problème technique</p>
+                                <a href="#new-ticket" class="btn btn-primary">Nouveau ticket</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <h3>Nous appeler</h3>
+                                <p>Support téléphonique disponible 7j/7 de 8h à 22h</p>
+                                <a href="tel:+237657207189" class="btn btn-outline">+237 6 57 20 71 89</a>
+                            </div>
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Chat en direct</h3>
+                                <p>Discutez en temps réel avec un technicien</p>
+                                <a href="#chat" class="btn btn-outline">Démarrer un chat</a>
+                            </div>
+                        </div>
+
+                        <div class="ticket-history">
+                            <div class="section-subtitle">
+                                <h3>Historique des tickets</h3>
+                            </div>
+                            <div class="ticket-table-container">
+                                <table class="ticket-table">
+                                    <thead>
+                                        <tr>
+                                            <th>N° Ticket</th>
+                                            <th>Date</th>
+                                            <th>Sujet</th>
+                                            <th>Statut</th>
+                                            <th>Dernière mise à jour</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>10/05/2025</td>
+                                            <td>Problème de connexion</td>
+                                            <td><span class="status-badge resolved">Résolu</span></td>
+                                            <td>12/05/2025</td>
+                                            <td><a href="#view-ticket" class="btn-link">Voir</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#12289</td>
+                                            <td>25/04/2025</td>
+                                            <td>Question sur la facturation</td>
+                                            <td><span class="status-badge resolved">Résolu</span></td>
+                                            <td>26/04/2025</td>
+                                            <td><a href="#view-ticket" class="btn-link">Voir</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#12156</td>
+                                            <td>15/03/2025</td>
+                                            <td>Demande d'information</td>
+                                            <td><span class="status-badge resolved">Résolu</span></td>
+                                            <td>16/03/2025</td>
+                                            <td><a href="#view-ticket" class="btn-link">Voir</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="faq-section">
+                            <div class="section-subtitle">
+                                <h3>Questions fréquentes</h3>
+                            </div>
+                            <div class="faq-container">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Comment tester la vitesse de ma connexion ?</h4>
+                                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Vous pouvez tester la vitesse de votre connexion en utilisant notre outil de test intégré dans votre espace client ou en visitant des sites comme speedtest.net. Pour des résultats optimaux, assurez-vous d'être connecté en filaire et qu'aucun autre appareil n'utilise intensivement la connexion pendant le test.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Comment ajouter un nouvel appareil à mon réseau ?</h4>
+                                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Pour ajouter un nouvel appareil à votre réseau, connectez simplement l'appareil au réseau Wi-Fi en utilisant le nom du réseau (SSID) et le mot de passe fournis lors de l'installation. Si vous avez atteint la limite d'appareils de votre forfait, vous devrez d'abord déconnecter un appareil existant ou mettre à niveau votre forfait pour permettre plus de connexions simultanées.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Que faire en cas de coupure internet ?</h4>
+                                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>En cas de coupure internet, commencez par redémarrer votre modem (débranchez-le, attendez 30 secondes, puis rebranchez-le). Si le problème persiste, vérifiez si la panne est locale ou générale via notre application mobile. Pour une assistance immédiate, contactez notre support technique au +237 6 57 20 71 89 ou créez un ticket dans votre espace client.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Profil -->
+                    <div id="profile" class="dashboard-section">
+                        <div class="section-title">
+                            <h2>Mon profil</h2>
+                        </div>
+
+                        <div class="profile-form-container">
+                            <form class="profile-form">
+                                <div class="profile-avatar-section">
+                                    <div class="profile-avatar">
+                                        <img src="https://via.placeholder.com/100" alt="Photo de profil">
+                                    </div>
+                                    <div class="avatar-actions">
+                                        <button type="button" class="btn btn-outline btn-sm">Changer la photo</button>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>Informations personnelles</h3>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="first-name">Prénom</label>
+                                            <input type="text" id="first-name" value="Thomas">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last-name">Nom</label>
+                                            <input type="text" id="last-name" value="Dubois">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" value="thomas.dubois@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Téléphone</label>
+                                            <input type="tel" id="phone" value="+237 6 XX XX XX XX">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>Adresse</h3>
+                                    <div class="form-group">
+                                        <label for="address">Adresse complète</label>
+                                        <input type="text" id="address" value="123 Rue des Étudiants">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="city">Ville</label>
+                                            <input type="text" id="city" value="Douala">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="postal-code">Code postal</label>
+                                            <input type="text" id="postal-code" value="BP 12345">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>Sécurité</h3>
+                                    <div class="form-group">
+                                        <label for="current-password">Mot de passe actuel</label>
+                                        <input type="password" id="current-password" placeholder="••••••••">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="new-password">Nouveau mot de passe</label>
+                                            <input type="password" id="new-password" placeholder="Nouveau mot de passe">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="confirm-password">Confirmer le mot de passe</label>
+                                            <input type="password" id="confirm-password" placeholder="Confirmer le mot de passe">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+                                    <button type="reset" class="btn btn-outline">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Section Paramètres -->
+                    <div id="settings" class="dashboard-section">
+                        <div class="section-title">
+                            <h2>Paramètres</h2>
+                        </div>
+
+                        <div class="settings-container">
+                            <div class="settings-section">
+                                <h3>Préférences de notification</h3>
+                                <div class="settings-options">
+                                    <div class="settings-option">
+                                        <div class="option-label">
+                                            <h4>Notifications par email</h4>
+                                            <p>Recevoir des emails concernant votre compte et vos services</p>
+                                        </div>
+                                        <div class="option-toggle">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="settings-option">
+                                        <div class="option-label">
+                                            <h4>Notifications SMS</h4>
+                                            <p>Recevoir des SMS pour les alertes importantes</p>
+                                        </div>
+                                        <div class="option-toggle">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="settings-option">
+                                        <div class="option-label">
+                                            <h4>Rappels de paiement</h4>
+                                            <p>Recevoir des rappels avant l'échéance de paiement</p>
+                                        </div>
+                                        <div class="option-toggle">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="settings-option">
+                                        <div class="option-label">
+                                            <h4>Offres promotionnelles</h4>
+                                            <p>Recevoir des informations sur nos offres et promotions</p>
+                                        </div>
+                                        <div class="option-toggle">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="settings-section">
+                                <h3>Confidentialité</h3>
+                                <div class="settings-options">
+                                    <div class="settings-option">
+                                        <div class="option-label">
+                                            <h4>Partage des données d'utilisation</h4>
+                                            <p>Autoriser le partage anonyme des données pour améliorer nos services</p>
+                                        </div>
+                                        <div class="option-toggle">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="settings-option">
+                                        <div class="option-label">
+                                            <h4>Authentification à deux facteurs</h4>
+                                            <p>Renforcer la sécurité de votre compte</p>
+                                        </div>
+                                        <div class="option-toggle">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="settings-section">
+                                <h3>Gestion du compte</h3>
+                                <div class="settings-options">
+                                    <div class="settings-option danger">
+                                        <div class="option-label">
+                                            <h4>Désactiver mon compte</h4>
+                                            <p>Suspendre temporairement votre compte et vos services</p>
+                                        </div>
+                                        <div class="option-action">
+                                            <button class="btn btn-outline btn-danger">Désactiver</button>
+                                        </div>
+                                    </div>
+                                    <div class="settings-option danger">
+                                        <div class="option-label">
+                                            <h4>Supprimer mon compte</h4>
+                                            <p>Supprimer définitivement votre compte et toutes vos données</p>
+                                        </div>
+                                        <div class="option-action">
+                                            <button class="btn btn-outline btn-danger">Supprimer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text botom">H-LINK</h2>
+                    <p>Internet haut débit pour étudiants</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                        <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../compte/compte.html">Compte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>                            
+                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../conf/script.js"></script>
+    <script src="../dark-mode/theme-switcher.js"></script>
+    <script src="../compte/compte.js"></script>
+    
+</body>
+</html>

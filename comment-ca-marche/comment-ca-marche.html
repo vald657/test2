@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment ça marche | H-Link</title>
+    <link rel="stylesheet" href="../acceuil/styles.css">
+    <link rel="stylesheet" href="../comment-ca-marche/comment-ca-marche.css">
+    <link rel="stylesheet" href="../dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- En-tête et Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-text">
+                <h1>H-LINK</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                    <li><a href="../comment-ca-marche/comment-ca-marche.html" class="active">Comment ça marche</a></li>
+                    <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../compte/compte.html">Compte</a></li>
+                </ul>
+            </nav>
+            <!-- Ajoutez ce bouton -->
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-moon"></i>
+                <span id="theme-text">Mode nuit</span>
+            </button>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero pro-hero">
+        <div class="container">
+            <h1>Comment ça marche</h1>
+            <p>Découvrez comment obtenir votre connexion internet étudiant en quelques étapes simples</p>
+        </div>
+    </section>
+
+    <!-- Section Processus -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre processus en 4 étapes</h2>
+                <p>De la souscription à la connexion, tout est simple et rapide</p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Choisissez votre forfait</h3>
+                        <p>Parcourez nos différentes offres et sélectionnez celle qui correspond le mieux à vos besoins
+                            et à votre budget.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Vérifiez votre éligibilité</h3>
+                        <p>Vérifiez que votre logement est éligible à nos services en signalant votre localisation pour
+                            bénéficier de nos tarifs préférentiels.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Validation de votre connexion</h3>
+                        <p>Nos techniciens vous contactent une fois la connexion établie, généralement sous 24h.</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Profitez de votre connexion</h3>
+                        <p> Vous êtes prêt à profiter d'une connexion internet haut débit !</p>
+                        <div class="timeline-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Éligibilité -->
+    <section class="eligibility">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vérifiez votre éligibilité</h2>
+                <p>Assurez-vous que votre logement est éligible à nos services</p>
+            </div>
+            <div class="eligibility-form">
+                <form>
+                    <div class="form-group">
+                        <label for="address">Adresse complète</label>
+                        <input type="text" id="address" placeholder="Numéro, rue, code postal, ville" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-card">Localistion du logement</label>
+                        <div class="file-upload">
+                            <input type="file" id="student-card" accept="image/*">
+                            <label for="student-card" class="file-label">
+                                <i class="fas fa-upload"></i> Télécharger la localistion du logement
+                            </label>
+                        </div>
+                        <small>Rendez vous sur <a href="https://googlemap.com">www.googlemap.com</a>, marquez votre
+                            localisation et faites une capture d'écran (coordonnées GPS biens visible).</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Vérifier mon éligibilité</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Installation 
+    <section class="installation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre processus d'installation</h2>
+                <p>Une installation rapide et professionnelle</p>
+            </div>
+            <div class="installation-content">
+                <div class="installation-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Technicien installant une connexion internet">
+                </div>
+                <div class="installation-text">
+                    <h3>Installation par des professionnels</h3>
+                    <p>Nos techniciens certifiés s'occupent de tout :</p>
+                    <ul class="installation-list">
+                        <li><i class="fas fa-check"></i> Vérification de la ligne et des prises</li>
+                        <li><i class="fas fa-check"></i> Installation du modem et configuration du Wi-Fi</li>
+                        <li><i class="fas fa-check"></i> Test de la connexion sur tous vos appareils</li>
+                        <li><i class="fas fa-check"></i> Explication du fonctionnement et conseils d'utilisation</li>
+                    </ul>
+                    <p>L'installation prend généralement entre 1 et 2 heures, selon la configuration de votre logement.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section Équipement 
+    <section class="equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Votre équipement</h2>
+                <p>Un matériel moderne et performant</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Modem Wi-Fi">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Modem Wi-Fi</h3>
+                        <p>Notre modem dernière génération offre une couverture optimale et des performances exceptionnelles.</p>
+                        <ul class="equipment-features">
+                            <li><i class="fas fa-check"></i> Wi-Fi 6 pour une connexion ultra-rapide</li>
+                            <li><i class="fas fa-check"></i> Portée jusqu'à 100m²</li>
+                            <li><i class="fas fa-check"></i> Gestion facile via application mobile</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Wi-Fi Booster">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Wi-Fi Booster (optionnel)</h3>
+                        <p>Pour les grands logements ou les colocations, notre amplificateur Wi-Fi étend la couverture à toutes les pièces.</p>
+                        <ul class="equipment-features">
+                            <li><i class="fas fa-check"></i> Augmente la portée du Wi-Fi jusqu'à 50m supplémentaires</li>
+                            <li><i class="fas fa-check"></i> Installation plug-and-play</li>
+                            <li><i class="fas fa-check"></i> Idéal pour les logements à plusieurs étages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section Support -->
+    <section class="support">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre support technique</h2>
+                <p>Une assistance dédiée aux étudiants</p>
+            </div>
+            <div class="support-content">
+                <div class="support-text">
+                    <h3>Assistance technique 7j/7</h3>
+                    <p>Notre équipe de support technique est disponible pour vous aider en cas de problème :</p>
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table">
+                            <tr>
+                                <td><i class="fas fa-headset"></i> </td>
+                                <td><strong>Hotline dédiée :</strong></td>
+                                <td>Assistance téléphonique de 8h à 22h, 7j/7</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-comments"></i> </td>
+                                <td><strong>Chat en direct :</strong></td>
+                                <td>Support instantané via notre site web</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-tools"></i> </td>
+                                <td><strong>Intervention technique :</strong></td>
+                                <td>Si nécessaire, un technicien peut se déplacer chez vous</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-book"></i> </td>
+                                <td><strong>Base de connaissances :</strong></td>
+                                <td>Guides et tutoriels pour résoudre les problèmes courants</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="support-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Support technique H-Link">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Tout ce que vous devez savoir sur notre processus</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps faut-il pour activer ma connexion ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dans la plupart des cas, votre connexion est activée le jour même de l'installation. Si votre
+                            logement n'a jamais été équipé, le délai peut être de 3 à 5 jours ouvrés.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Dois-je être présent lors de l'installation ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, votre présence est nécessaire lors de l'installation pour permettre l'accès au logement
+                            et pour que notre technicien puisse vous expliquer le fonctionnement de votre équipement.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Que se passe-t-il si je déménage en cours d'année ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos forfaits sont sans engagement, vous pouvez donc résilier à tout moment. Si vous déménagez
+                            dans une zone couverte par H-Link, nous pouvons transférer votre abonnement à votre nouvelle
+                            adresse gratuitement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>L'équipement est-il à acheter ou à louer ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'équipement est inclus dans votre abonnement sous forme de location. À la fin de votre
+                            contrat, vous devrez le retourner. Si vous souhaitez l'acheter, des options sont
+                            disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à vous connecter ?</h2>
+                <p>Commencez dès maintenant et profitez d'une connexion internet haut débit adaptée à vos besoins
+                    d'étudiant</p>
+                <div class="cta-buttons">
+                    <a href="../forfaits/forfaits.html" class="btn btn-primary">Voir les forfaits</a>
+                    <a href="../contact/contact.html" class="btn btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text botom">H-LINK</h2>
+                    <p>Internet haut débit pour étudiants</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                        <li><a href="../professionnel/professionnel.html">professionnel</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../compte/compte.html">Compte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>
+                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../conf/script.js"></script>
+    <script src="../dark-mode/theme-switcher.js"></script>
+
+</body>
+
+</html>

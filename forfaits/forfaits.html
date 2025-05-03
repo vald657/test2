@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Forfaits | H-Link</title>
+    <link rel="stylesheet" href="../acceuil/styles.css">
+    <link rel="stylesheet" href="../forfaits/forfaits.css">
+    <link rel="stylesheet" href="../dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- En-tête et Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-text">
+                <h1>H-LINK</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../forfaits/forfaits.html" class="active">Nos Forfaits</a></li>
+                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                    <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../compte/compte.html">Compte</a></li>
+                </ul>
+            </nav>
+            <!-- Ajoutez ce bouton -->
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-moon"></i>
+                <span id="theme-text">Mode nuit</span>
+            </button>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero pro-hero">
+        <div class="container">
+            <h1>Nos Forfaits Internet</h1>
+            <p>Des solutions adaptées à tous les besoins et budgets étudiants</p>
+        </div>
+    </section>
+
+    <!-- Section Comparaison des Forfaits -->
+    <section class="plans-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comparez nos forfaits</h2>
+                <p>Trouvez l'offre parfaite pour votre vie étudiante</p>
+            </div>
+
+            <div class="plans-filter">
+                <button class="filter-btn active" data-filter="all">Tous les forfaits</button>
+                <button class="filter-btn" data-filter="solo">Étudiant solo</button>
+                <button class="filter-btn" data-filter="coloc">Colocation</button>
+            </div>
+
+            <div class="plans-grid">
+                <!-- Forfait Starter -->
+                <div id="starter" class="plan-card" data-category="solo">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="plan-price">
+                            <span class="price">2000₣</span>
+                            <span class="period">/semaine</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 Mbps</li>
+                            <li><i class="fas fa-check"></i> Un appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique basique</li>
+                            <li><i class="fas fa-times"></i> Services additionnels</li>
+                            <li><i class="fas fa-times"></i> IP fixe</li>
+                            <li><i class="fas fa-times"></i> Support VIP</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="../contact/contact.html?plan=starter" class="btn btn-outline">Souscrire</a>
+                    </div>
+                </div>
+
+                <!-- Forfait Medium -->
+                <div id="medium" class="plan-card featured" data-category="solo coloc">
+                    <div class="plan-badge">Le plus populaire</div>
+                    <div class="plan-header">
+                        <h3>Medium</h3>
+                        <div class="plan-price">
+                            <span class="price">5000₣</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 2 Mbps</li>
+                            <li><i class="fas fa-check"></i> Un appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique prioritaire</li>
+                            <li><i class="fas fa-check"></i> Services additionnels</li>
+                            <li><i class="fas fa-times"></i> IP fixe</li>
+                            <li><i class="fas fa-times"></i> Support VIP</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="../contact/contact.html?plan=medium" class="btn btn-primary">Souscrire</a>
+                    </div>
+                </div>
+
+                <!-- Forfait Premium -->
+                <div id="premium" class="plan-card" data-category="solo coloc">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">10000₣</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 5 Mbps</li>
+                            <li><i class="fas fa-check"></i> Deux appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique VIP</li>
+                            <li><i class="fas fa-check"></i> Services additionnels</li>
+                            <li><i class="fas fa-check"></i> IP fixe</li>
+                            <li><i class="fas fa-times"></i> Support VIP</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="../contact/contact.html?plan=premium" class="btn btn-outline">Souscrire</a>
+                    </div>
+                </div>
+
+                <!-- Forfait Ultimate -->
+                <div id="ultimate" class="plan-card" data-category="coloc">
+                    <div class="plan-header">
+                        <h3>Ultimate</h3>
+                        <div class="plan-price">
+                            <span class="price">20000₣</span>
+                            <span class="period">/mois</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 25 Mbps</li>
+                            <li><i class="fas fa-check"></i> Cinq appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique VIP</li>
+                            <li><i class="fas fa-check"></i> Services additionnels</li>
+                            <li><i class="fas fa-check"></i> IP fixe</li>
+                            <li><i class="fas fa-times"></i> Support VIP</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="../contact/contact.html?plan=ultimate" class="btn btn-outline">Souscrire</a>
+                    </div>
+                </div>
+
+                <!-- Forfait Custom -->
+                <div class="plan-card" data-category="all">
+                    <div class="plan-badge">Offre spéciale</div>
+                    <div class="plan-header">
+                        <h3>Custom</h3>
+                        <div class="plan-price">
+                            <span class="price">Ajustable</span>
+                            <span class="period"></span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Construire son propre forfait internet</li>
+                            <li><i class="fas fa-check"></i> Plusieurs appareil connecté</li>
+                            <li><i class="fas fa-check"></i> Configuration gratuite</li>
+                            <li><i class="fas fa-check"></i> Support technique VIP</li>
+                            <li><i class="fas fa-check"></i> Services additionnels</li>
+                            <li><i class="fas fa-check"></i> IP fixe</li>
+                            <li><i class="fas fa-check"></i> Support VIP</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="../professionnel/professionnel.html" class="btn btn-outline">Souscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Options Additionnelles 
+    <section class="add-ons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Options Additionnelles</h2>
+                <p>Personnalisez votre forfait selon vos besoins</p>
+            </div>
+            <div class="add-ons-grid">
+                <div class="add-on-card">
+                    <div class="add-on-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>TV & Streaming</h3>
+                        <p>Accédez à plus de 100 chaînes TV et plateformes de streaming</p>
+                        <p class="add-on-price">+5,99€/mois</p>
+                    </div>
+                </div>
+                <div class="add-on-card">
+                    <div class="add-on-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>Téléphonie Illimitée</h3>
+                        <p>Appels illimités vers les fixes et mobiles en France</p>
+                        <p class="add-on-price">+3,99€/mois</p>
+                    </div>
+                </div>
+                <div class="add-on-card">
+                    <div class="add-on-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>Sécurité Premium</h3>
+                        <p>Protection antivirus et VPN pour tous vos appareils</p>
+                        <p class="add-on-price">+4,99€/mois</p>
+                    </div>
+                </div>
+                <div class="add-on-card">
+                    <div class="add-on-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="add-on-content">
+                        <h3>Wi-Fi Booster</h3>
+                        <p>Amplificateur Wi-Fi pour une couverture optimale dans tout votre logement</p>
+                        <p class="add-on-price">+2,99€/mois</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Section Comparaison Technique -->
+    <section class="technical-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comparaison Technique</h2>
+                <p>Détails techniques de nos différents forfaits</p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Caractéristiques</th>
+                            <th>Starter</th>
+                            <th>Medium</th>
+                            <th>Premium</th>
+                            <th>Ultimate</th>
+                            <th>Custom</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vitesse download</td>
+                            <td>1 Mbps</td>
+                            <td>2 Mbps</td>
+                            <td>5 Mbps</td>
+                            <td>25 Mbps</td>
+                            <td>Ajustable</td>
+                        </tr>
+                        <tr>
+                            <td>Vitesse upload</td>
+                            <td>Jusqu'à 300 Kbps</td>
+                            <td>Jusqu'à 600 Kbps</td>
+                            <td>Jusqu'à 2 Mbps</td>
+                            <td>Jusqu'à 15 Mbps</td>
+                            <td>Ajustable</td>
+                        </tr>
+                        <tr>
+                            <td>Latence moyenne</td>
+                            <td>20-30 ms</td>
+                            <td>15-25 ms</td>
+                            <td>5-15 ms</td>
+                            <td>5-15 ms</td>
+                            <td>5-15 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Utilisateurs simultanés</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>1 et plus</td>
+                        </tr>
+                        <tr>
+                            <td>Type de connexion</td>
+                            <td>WI-fi</td>
+                            <td>Wi-fi</td>
+                            <td>Wi-fi</td>
+                            <td>Wi-fi</td>
+                            <td>Wi-fi</td>
+                        </tr>
+                        <tr>
+                            <td>Support technique</td>
+                            <td>Basique</td>
+                            <td>Basique</td>
+                            <td>Prioritaire</td>
+                            <td>Prioritaire</td>
+                            <td>VIP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes sur nos Forfaits</h2>
+                <p>Tout ce que vous devez savoir avant de souscrire</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Y a-t-il des frais d'activation ou d'installation ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Non, l'installation est gratuite pour tous nos forfaits. Notre technicien se déplace chez
+                            vous et configure tout votre équipement sans frais supplémentaires.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je changer de forfait en cours d'abonnement ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, vous pouvez passer à un forfait supérieur à tout moment. Pour passer à un forfait
+                            inférieur, cela est possible après 3 mois d'abonnement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Le modem Wi-Fi est-il inclus dans tous les forfaits ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Non seule l'offre spéciale Custom permet l'acquisition d'un modem dernière génération.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Besoin d'aide pour choisir ?</h2>
+                <p>Nos conseillers sont là pour vous guider vers le forfait idéal</p>
+                <a href="../contact/contact.html" class="btn btn-primary">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text botom">H-LINK</h2>
+                    <p>Internet haut débit pour étudiants</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                        <li><a href="../professionnel/professionnel.html">professionnel</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../compte/compte.html">Compte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>                            
+                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../conf/script.js"></script>
+    <script src="../dark-mode/theme-switcher.js"></script>
+
+</body>
+
+</html>
