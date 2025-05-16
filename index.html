@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-Link | Forfaits Internet pour Étudiants</title>
     <link rel="stylesheet" href="./acceuil/styles.css">
-    <!-- Ajoutez cette ligne -->
     <link rel="stylesheet" href="dark-mode/dark-mode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- En-tête et Navigation -->
+    <!-- En-tête et Navigation 
+    <div id="header"></div>-->
     <header>
         <div class="container">
             <div class="logo-text">
@@ -38,14 +38,13 @@
             </div>
         </div>
     </header>
-
     <!-- Section Hero -->
     <section class="hero pro-hero">
         <div class="container">
             <div class="hero-content">
                 <h1>H-Link</h1>
-                <h2>Internet Haut Débit pour Étudiants</h2>
-                <p>Des forfaits adaptés à votre budget et à vos besoins académiques</p>
+                <h2>Internet illimité à haut débit</h2>
+                <p>Des forfaits adaptés à votre budget et à vos besoins</p>
                 <div class="hero-buttons">
                     <a href="forfaits/forfaits.html" class="btn btn-primary1">Voir les forfaits</a>
                     <a href="comment-ca-marche/comment-ca-marche.html" class="btn btn-secondary1">Comment ça marche</a>
@@ -62,7 +61,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Pourquoi choisir H-Link ?</h2>
-                <p>Des avantages conçus spécialement pour les étudiants</p>
+                <p>Des avantages conçus spécialement pour vous</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -70,21 +69,21 @@
                         <i class="fas fa-wifi"></i>
                     </div>
                     <h3>Haut Débit Fiable</h3>
-                    <p>Connexion ultra-rapide pour vos cours en ligne, recherches et divertissement.</p>
+                    <p>Connexion ultra-rapide pour vos cours en ligne, travail, recherches et divertissement.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-franc-sign"></i>
                     </div>
-                    <h3>Prix Étudiant</h3>
-                    <p>Tarifs préférentiels sur présentation de votre carte étudiante.</p>
+                    <h3>Prix Attractifs</h3>
+                    <p>Tarifs préférentiels préférentiels adaptés a toutes les bources.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
                     <h3>Sans Engagement</h3>
-                    <p>Forfaits flexibles adaptés au rythme de l'année universitaire.</p>
+                    <p>Forfaits flexibles adaptés a votre quotidien.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -232,8 +231,8 @@
                         </div>
                         <p>"Parfait pour mes cours en ligne et pour regarder des séries. La connexion est stable même aux heures de pointe !"</p>
                         <div class="testimonial-author">
-                            <h4>Marie D.</h4>
-                            <p>Étudiante en droit, Paris</p>
+                            <h4>Ousmane D.</h4>
+                            <p>Étudiante en droit, Yaoundé</p>
                         </div>
                     </div>
                 </div>
@@ -248,8 +247,8 @@
                         </div>
                         <p>"Le forfait Ultimate personnalisé est idéal pour notre colocation de 4 étudiants. Nous pouvons tous être connectés en même temps sans problème."</p>
                         <div class="testimonial-author">
-                            <h4>Thomas L.</h4>
-                            <p>Étudiant en informatique, Lyon</p>
+                            <h4>Cassandra P.</h4>
+                            <p>Étudiant en informatique, Douala</p>
                         </div>
                     </div>
                 </div>
@@ -264,7 +263,7 @@
                         </div>
                         <p>"Installation rapide et service client très réactif. Le prix étudiant fait vraiment la différence pour mon budget serré."</p>
                         <div class="testimonial-author">
-                            <h4>Sophie M.</h4>
+                            <h4>Ndogno M.</h4>
                             <p>Étudiante en médecine, Bordeaux</p>
                         </div>
                     </div>
@@ -287,7 +286,7 @@
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                     </div>
                     <div class="faq-answer">
-                        <p>Pour bénéficier de nos tarifs étudiants, vous devez nous fournir une copie de votre carte étudiante valide pour l'année universitaire en cours, ainsi qu'un justificatif de domicile de moins de 3 mois.</p>
+                        <p>Pour bénéficier de nos tarifs étudiants, vous devez nous fournir une copie de votre carte étudiante valide pour l'année universitaire en cours.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -329,7 +328,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Prêt à booster votre connexion ?</h2>
-                <p>Profitez de nos offres spéciales pour la rentrée universitaire !</p>
+                <p>Profitez de nos offres spéciales pour tous !</p>
                 <a href="forfaits/forfaits.html" class="btn btn-primary">Voir les offres</a>
             </div>
         </div>
@@ -341,7 +340,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2 class="logo-text botom">H-LINK</h2>
-                    <p>Internet haut débit pour étudiants</p>
+                    <p>Internet illimité à haut débit</p>
                 </div>
                 <div class="footer-links">
                     <h3>Navigation</h3>
@@ -384,6 +383,11 @@
 
     <script src="conf/script.js"></script>
     <script src="dark-mode/theme-switcher.js"></script>
-    
+
+    <script>
+    fetch('head.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('header').innerHTML = data)
+    </script>
 </body>
 </html>

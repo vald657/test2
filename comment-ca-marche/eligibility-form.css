@@ -1,0 +1,74 @@
+/* eligibility-form.css */
+
+/* Styles pour la prévisualisation de l'image */
+.file-preview {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.preview-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(52, 152, 219, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.preview-container img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.file-name {
+    font-size: 0.9rem;
+    color: var(--night-blue);
+}
+
+/* Style pour le label lorsqu'un fichier est téléchargé */
+.file-label.file-uploaded {
+    background-color: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+/* Styles pour les notifications */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.success {
+    background-color: var(--green);
+}
+
+.notification.error {
+    background-color: var(--red);
+}
+
+.notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Animation de chargement pour le bouton */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+    animation: spin 1s infinite linear;
+}
