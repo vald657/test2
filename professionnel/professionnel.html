@@ -12,7 +12,32 @@
 </head>
 <body>
     <!-- En-tête et Navigation -->
-    <div id="header"></div>
+    <header>
+    <div class="container">
+        <div class="logo-text">
+            <h1>H-LINK</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link" data-page="index">Accueil</a></li>
+                <li><a href="../forfaits/forfaits.html" class="nav-link" data-page="forfaits">Nos Forfaits</a></li>
+                <li><a href="../comment-ca-marche/comment-ca-marche.html" class="nav-link" data-page="comment-ca-marche">Comment ça marche</a></li>
+                <li><a href="#" class="nav-link" data-page="professionnel">Professionnel</a></li>
+                <li><a href="../contact/contact.html" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Bouton de basculement de thème -->
+        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+            <i id="theme-icon" class="fas fa-moon"></i>
+            <span id="theme-text">Mode nuit</span>
+        </button>
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="page-hero pro-hero">
@@ -460,11 +485,52 @@
     </section>
 
     <!-- Pied de page -->
-    <div id="footer"></div>
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>H-LINK</h2>
+                <p>Internet haut débit pour étudiants</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
+                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
+                    <li><a href="#">Professionnel</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="a-propos/a-propos.html">À propos de nous</a></li>
+                    <li><a href="conditions/conditions.html">Conditions générales</a></li>
+                    <li><a href="confidentialite/confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="mentions-legales/mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Logbessou IUC, Douala</p>
+                <p><i class="fas fa-phone"></i><a href="tel:+237640630214">+237 6 40 63 02 14</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:+237674317205">+237 6 74 31 72 05</a></p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:hlink7372@gmail.com">H-Link_Cmr.com</a></p>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/profile.php?id=61576380748436"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@hlink.cmr?_t=ZM-8wOk9FT6Ypa&_r=1"><i class="fab fa-tiktok"></i></a>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 H-Link. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
 
     <script src="../conf/script.js"></script>
     <script src="../dark-mode/theme-switcher.js"></script>
-    <script src="../conf/inclure.js"></script>
     <script src="../animations/scroll-animations.js"></script>
     
 </body>
