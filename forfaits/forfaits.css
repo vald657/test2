@@ -7,6 +7,9 @@
     --font-white: #f8f8f8;
     --low-white: #ddd;
 }
+.page-hero {
+    margin-top: 10vh;
+}
 
 .plans-comparison {
     background-color: var(--font-white);

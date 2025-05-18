@@ -1,0 +1,605 @@
+    /* Animations CSS pour H-Link */
+
+/* Animations de base */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Classes d'animation pour les éléments au scroll */
+.animate {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.animate.fade-in {
+    opacity: 0;
+}
+
+.animate.fade-in.animated {
+    opacity: 1;
+}
+
+.animate.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.animate.fade-up.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate.fade-down {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.animate.fade-down.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate.fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.animate.fade-left.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate.fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.animate.fade-right.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate.scale-up {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.animate.scale-up.animated {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Délais d'animation */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+.delay-600 {
+    transition-delay: 0.6s;
+}
+
+.delay-700 {
+    transition-delay: 0.7s;
+}
+
+.delay-800 {
+    transition-delay: 0.8s;
+}
+
+/* Animations spécifiques pour les sections */
+
+/* Header Animation */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.dark-mode header.scrolled {
+    background-color: rgba(20, 30, 40, 0.95);
+}
+
+/* Logo Animation */
+.logo-text h1 {
+    transition: all 0.3s ease;
+}
+
+header.scrolled .logo-text h1 {
+    transform: scale(0.9);
+}
+
+/* Navigation Links Animation */
+.nav-links a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Hero Section Animations */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(44, 62, 80, 0.2) 100%);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.a {
+    height: 50vh;
+}
+
+.hero-content h1 {
+    animation: fadeInDown 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.hero-content h2 {
+    animation: fadeInDown 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+
+.hero-content p {
+    animation: fadeInDown 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+
+.hero-buttons {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+
+.hero-image {
+    animation: fadeInRight 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.hero-image img {
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Animation */
+.feature-card {
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    transition: all 0.5s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Plans Animation */
+.plan-card {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    transform-origin: center bottom;
+}
+
+.plan-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.featured {
+    animation: pulse 2s infinite;
+}
+
+.plan-price .price {
+    position: relative;
+    display: inline-block;
+}
+
+.plan-price .price::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(52, 152, 219, 0.2);
+    z-index: -1;
+    transition: height 0.3s ease;
+}
+
+.plan-card:hover .plan-price .price::before {
+    height: 20px;
+}
+
+/* Steps Animation */
+.step {
+    transition: all 0.5s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step-number {
+    transition: all 0.5s ease;
+}
+
+.step:hover .step-number {
+    transform: scale(1.2) rotate(10deg);
+    background-color: #3498db;
+}
+
+/* Testimonials Animation */
+.testimonial {
+    transition: all 0.5s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.rating i {
+    transition: all 0.3s ease;
+}
+
+.testimonial:hover .rating i {
+    color: #f1c40f;
+    transform: scale(1.2);
+    transition-delay: calc(0.05s * var(--i));
+}
+
+/* FAQ Animation */
+.faq-item {
+    transition: all 0.4s ease;
+}
+
+.faq-item:hover {
+    transform: translateX(10px);
+}
+
+.faq-toggle {
+    transition: all 0.4s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+    transition: max-height 1s ease-in-out;
+}
+
+/* CTA Animation */
+.cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.3) 0%, rgba(231, 76, 60, 0.3) 100%);
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 3s infinite;
+}
+
+/* Footer Animation */
+.footer-links a {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-links a::before {
+    content: '→';
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    transform: translateX(10px);
+    color: #3498db;
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    left: -15px;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) rotate(10deg);
+    background-color: #3498db;
+    color: white;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    z-index: 9999;
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+.scroll-top i {
+    font-size: 20px;
+}
+
+/* Cursor Animation */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(52, 152, 219, 0.5);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-cursor.active {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
+/* Dark Mode Transition */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+ 

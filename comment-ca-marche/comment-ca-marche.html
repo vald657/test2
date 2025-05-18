@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -10,42 +10,17 @@
     <link rel="stylesheet" href="../dark-mode/dark-mode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../comment-ca-marche/eligibility-form.css">
+    <link rel="stylesheet" href="../animations/animations.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
     <!-- En-tête et Navigation -->
-    <header>
-        <div class="container">
-            <div class="logo-text">
-                <h1>H-LINK</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
-                    <li><a href="../comment-ca-marche/comment-ca-marche.html" class="active">Comment ça marche</a></li>
-                    <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
-                    <li><a href="../contact/contact.html">Contact</a></li>
-                    <li><a href="../compte/compte.html">Compte</a></li>
-                </ul>
-            </nav>
-            <!-- Ajoutez ce bouton -->
-            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-                <i id="theme-icon" class="fas fa-moon"></i>
-                <span id="theme-text">Mode nuit</span>
-            </button>
-            <div class="burger-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="page-hero pro-hero">
-        <div class="container">
+        <div class="hero-content">
             <h1>Comment ça marche</h1>
             <p>Découvrez comment obtenir votre connexion internet étudiant en quelques étapes simples</p>
         </div>
@@ -55,11 +30,11 @@
     <section class="process">
         <div class="container">
             <div class="section-header">
-                <h2>Notre processus en 4 étapes</h2>
-                <p>De la souscription à la connexion, tout est simple et rapide</p>
+                <h2 class="animate fade-up">Notre processus en 4 étapes</h2>
+                <p class="animate fade-up delay-200">De la souscription à la connexion, tout est simple et rapide</p>
             </div>
             <div class="process-timeline">
-                <div class="timeline-item">
+                <div class="timeline-item animate fade-right delay-200">
                     <div class="timeline-number">1</div>
                     <div class="timeline-content">
                         <h3>Choisissez votre forfait</h3>
@@ -70,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item animate fade-right delay-300">
                     <div class="timeline-number">2</div>
                     <div class="timeline-content">
                         <h3>Vérifiez votre éligibilité</h3>
@@ -81,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item animate fade-right delay-400">
                     <div class="timeline-number">3</div>
                     <div class="timeline-content">
                         <h3>Effectuez le payement</h3>
@@ -91,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item animate fade-right delay-500">
                     <div class="timeline-number">4</div>
                     <div class="timeline-content">
                         <h3>Validation de votre connexion</h3>
@@ -101,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item animate fade-right delay-600">
                     <div class="timeline-number">5</div>
                     <div class="timeline-content">
                         <h3>Profitez de votre connexion</h3>
@@ -119,8 +94,8 @@
     <section class="eligibility">
         <div class="container">
             <div class="section-header">
-                <h2>Vérifiez votre éligibilité</h2>
-                <p>Assurez-vous que votre logement est éligible à nos services</p>
+                <h2 class="animate fade-up">Vérifiez votre éligibilité</h2>
+                <p class="animate fade-up delay-200">Assurez-vous que votre logement est éligible à nos services</p>
             </div>
             <div class="eligibility-form">
                 <form>
@@ -215,8 +190,8 @@
     <section class="support">
         <div class="container">
             <div class="section-header">
-                <h2>Notre support technique</h2>
-                <p>Une assistance dédiée aux étudiants</p>
+                <h2 class="animate fade-up">Notre support technique</h2>
+                <p class="animate fade-up delay-200">Une assistance dédiée aux étudiants</p>
             </div>
             <div class="support-content">
                 <div class="support-text">
@@ -258,11 +233,11 @@
     <section class="faq">
         <div class="container">
             <div class="section-header">
-                <h2>Questions Fréquentes</h2>
-                <p>Tout ce que vous devez savoir sur notre processus</p>
+                <h2 class="animate fade-up">Questions Fréquentes</h2>
+                <p class="animate fade-up delay-200">Tout ce que vous devez savoir sur notre processus</p>
             </div>
             <div class="faq-container">
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-300">
                     <div class="faq-question">
                         <h3>Combien de temps faut-il pour activer ma connexion ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -272,7 +247,7 @@
                             logement n'a jamais été équipé, le délai peut être de 2 à 3 jours ouvrés.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-400">
                     <div class="faq-question">
                         <h3>Dois-je être présent lors de l'installation ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -283,7 +258,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-500">
                     <div class="faq-question">
                         <h3>Que se passe-t-il si je déménage en cours d'année ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -312,7 +287,7 @@
     <!-- Section CTA -->
     <section class="cta">
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content animate scale-up    ">
                 <h2>Prêt à vous connecter ?</h2>
                 <p>Commencez dès maintenant et profitez d'une connexion internet haut débit adaptée à vos besoins</p>
                 <div class="cta-buttons">
@@ -324,56 +299,13 @@
     </section>
 
     <!-- Pied de page -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2 class="logo-text botom">H-LINK</h2>
-                    <p>Internet haut débit pour étudiants</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
-                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
-                        <li><a href="../professionnel/professionnel.html">professionnel</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                        <li><a href="../compte/compte.html">Compte</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Informations</h3>
-                    <ul>
-                        <li><a href="#">À propos de nous</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                        <li><a href="#">Mentions légales</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
-                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>
-                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a>
-                    </p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="../conf/script.js"></script>
     <script src="../dark-mode/theme-switcher.js"></script>
     <script src="../comment-ca-marche/eligibility-form.js"></script>
+    <script src="../conf/inclure.js"></script>
+    <script src="../animations/scroll-animations.js"></script>
 
 </body>
 

@@ -6,42 +6,17 @@
     <title>Solutions Professionnelles | H-Link</title>
     <link rel="stylesheet" href="../acceuil/styles.css">
     <link rel="stylesheet" href="../professionnel/Professionnel.css">
+    <link rel="stylesheet" href="../animations/animations.css">
     <link rel="stylesheet" href="../dark-mode/dark-mode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- En-tête et Navigation -->
-    <header>
-        <div class="container">
-            <div class="logo-text">
-                <h1>H-LINK</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
-                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
-                    <li><a href="../professionnel/professionnel.html" class="active">Professionnel</a></li>
-                    <li><a href="../contact/contact.html">Contact</a></li>
-                    <li><a href="../compte/compte.html">Compte</a></li>
-                </ul>
-            </nav>
-            <!-- Bouton de basculement de thème -->
-            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-                <i id="theme-icon" class="fas fa-moon"></i>
-                <span id="theme-text">Mode nuit</span>
-            </button>
-            <div class="burger-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="page-hero pro-hero">
-        <div class="container">
+        <div class="hero-content">
             <h1>Solutions Internet Professionnelles</h1>
             <p>Des connexions haut débit fiables et sécurisées pour votre entreprise</p>
         </div>
@@ -51,32 +26,32 @@
     <section class="pro-features">
         <div class="container">
             <div class="section-header">
-                <h2>Pourquoi choisir H-Link Business ?</h2>
-                <p>Des solutions adaptées aux besoins spécifiques de votre entreprise</p>
+                <h2 class="animate scale-up">Pourquoi choisir H-Link Business ?</h2>
+                <p class="animate scale-up delay-200">Des solutions adaptées aux besoins spécifiques de votre entreprise</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card animate fade-up delay-300">
                     <div class="feature-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
                     <h3>Connexion Ultra-rapide</h3>
                     <p>Bénéficiez de débits symétriques jusqu'à 1 Gbps pour des transferts de données rapides et efficaces.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animate fade-up delay-400">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Sécurité Renforcée</h3>
                     <p>Protection avancée contre les cybermenaces avec pare-feu dédié et surveillance 24/7.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animate fade-up delay-500">
                     <div class="feature-icon">
                         <i class="fas fa-server"></i>
                     </div>
                     <h3>Infrastructure Dédiée</h3>
                     <p>Réseau privé et équipements dédiés pour garantir performances et confidentialité.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card animate fade-up delay-300">
                     <div class="feature-icon">
                         <i class="fas fa-headset"></i>
                     </div>
@@ -91,11 +66,11 @@
     <section class="pro-solutions">
         <div class="container">
             <div class="section-header">
-                <h2>Nos Solutions Business</h2>
-                <p>Des offres adaptées à la taille et aux besoins de votre entreprise</p>
+                <h2 class="animate fade-up">Nos Solutions Business</h2>
+                <p class="animate fade-up delay-200">Des offres adaptées à la taille et aux besoins de votre entreprise</p>
             </div>
             <div class="solutions-grid">
-                <div class="solution-card">
+                <div class="solution-card animate fade-left delay-300">
                     <div class="solution-header">
                         <h3>Startup</h3>
                         <p class="solution-subtitle">Pour les petites entreprises</p>
@@ -118,8 +93,8 @@
                     <a href="../contact/contact.html?solution=startup" class="btn btn-outline">Demander un devis</a>
                 </div>
                 
-                <div class="solution-card featured">
-                    <div class="solution-badge">Le plus populaire</div>
+                <div class="plan-card featured animate scale-up delay-400" >
+                    <div class="plan-badge">Le plus populaire</div>
                     <div class="solution-header">
                         <h3>Business</h3>
                         <p class="solution-subtitle">Pour les PME</p>
@@ -142,7 +117,7 @@
                     <a href="../contact/contact.html?solution=business" class="btn btn-primary">Demander un devis</a>
                 </div>
                 
-                <div class="solution-card">
+                <div class="solution-card animate fade-right delay-500">
                     <div class="solution-header">
                         <h3>Entreprise</h3>
                         <p class="solution-subtitle">Pour les grandes entreprises</p>
@@ -171,12 +146,12 @@
     <section class="additional-services">
         <div class="container">
             <div class="section-header">
-                <h2>Services Additionnels</h2>
-                <p>Personnalisez votre solution avec nos services complémentaires</p>
+                <h2 class="animate scale-up">Services Additionnels</h2>
+                <p class="animate scale-up delay-200">Personnalisez votre solution avec nos services complémentaires</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
                     <div class="service-content">
@@ -185,8 +160,8 @@
                         <p class="service-price">À partir de 15 000₣/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
                     <div class="service-content">
@@ -195,8 +170,8 @@
                         <p class="service-price">À partir de 25 000₣/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-video"></i>
                     </div>
                     <div class="service-content">
@@ -205,8 +180,8 @@
                         <p class="service-price">À partir de 20 000₣/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-lock"></i>
                     </div>
                     <div class="service-content">
@@ -215,8 +190,8 @@
                         <p class="service-price">À partir de 30 000₣/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-tv"></i>
                     </div>
                     <div class="add-on-content">
@@ -225,8 +200,8 @@
                         <p class="add-on-price">+5,99€/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
                     <div class="add-on-content">
@@ -235,8 +210,8 @@
                         <p class="add-on-price">+3,99€/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <div class="add-on-content">
@@ -245,8 +220,8 @@
                         <p class="add-on-price">+4,99€/mois</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="feature-card animate fade-up delay-300">
+                    <div class="feature-icon">
                         <i class="fas fa-wifi"></i>
                     </div>
                     <div class="add-on-content">
@@ -263,32 +238,32 @@
     <section class="installation-process">
         <div class="container">
             <div class="section-header">
-                <h2>Notre Processus d'Installation</h2>
-                <p>Une mise en place professionnelle en 4 étapes</p>
+                <h2 class="animate scale-up">Notre Processus d'Installation</h2>
+                <p class="animate scale-up delay-200">Une mise en place professionnelle en 4 étapes</p>
             </div>
             <div class="process-steps">
-                <div class="process-step">
+                <div class="process-step animate fade-right delay-300">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Audit et Consultation</h3>
                         <p>Nos experts analysent vos besoins et l'infrastructure existante pour proposer la solution optimale.</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step animate fade-right delay-400">
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3>Planification</h3>
                         <p>Élaboration d'un plan détaillé d'installation et de configuration adapté à vos locaux.</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step animate fade-right delay-500">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3>Installation</h3>
                         <p>Mise en place de l'infrastructure réseau par nos techniciens certifiés avec un minimum de perturbation.</p>
                     </div>
                 </div>
-                <div class="process-step">
+                <div class="process-step animate fade-right delay-600">
                     <div class="step-number">4</div>
                     <div class="step-content">
                         <h3>Formation et Support</h3>
@@ -303,8 +278,8 @@
     <section class="quote-request">
         <div class="container">
             <div class="section-header">
-                <h2>Demandez un Devis Personnalisé</h2>
-                <p>Nos experts vous contacteront pour élaborer la solution adaptée à vos besoins</p>
+                <h2 class="animate scale-up">Demandez un Devis Personnalisé</h2>
+                <p class="animate scale-up delay-200">Nos experts vous contacteront pour élaborer la solution adaptée à vos besoins</p>
             </div>
             <div class="quote-form-container">
                 <form class="quote-form">
@@ -368,11 +343,11 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>Ils nous font confiance</h2>
-                <p>Découvrez ce que nos clients professionnels disent de nos services</p>
+                <h2 class="animate scale-up">Ils nous font confiance</h2>
+                <p class="animate scale-up delay-200">Découvrez ce que nos clients professionnels disent de nos services</p>
             </div>
             <div class="testimonial-slider">
-                <div class="testimonial">
+                <div class="testimonial animate fade-left delay-300">
                     <div class="testimonial-content">
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -388,7 +363,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial animate fade-up delay-400">
                     <div class="testimonial-content">
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -404,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial animate fade-right delay-500">
                     <div class="testimonial-content">
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -429,11 +404,11 @@
     <section class="faq">
         <div class="container">
             <div class="section-header">
-                <h2>Questions Fréquentes</h2>
-                <p>Réponses aux questions les plus courantes sur nos solutions professionnelles</p>
+                <h2 class="animate fade-up">Questions Fréquentes</h2>
+                <p class="animate fade-up delay-200">Réponses aux questions les plus courantes sur nos solutions professionnelles</p>
             </div>
             <div class="faq-container">
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-300">
                     <div class="faq-question">
                         <h3>Quel est le délai d'installation pour une solution professionnelle ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -442,7 +417,7 @@
                         <p>Le délai d'installation varie selon la complexité de votre projet et la taille de votre entreprise. Pour une petite structure, comptez environ 1 semaine. Pour des installations plus importantes, le délai peut aller jusqu'à 3-4 semaines. Nous établissons un planning précis lors de la phase de consultation.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-400">
                     <div class="faq-question">
                         <h3>Proposez-vous des solutions de redondance en cas de panne ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -451,7 +426,7 @@
                         <p>Oui, nous proposons des solutions de redondance pour garantir la continuité de votre activité. Cela peut inclure des connexions de secours via différentes technologies (fibre secondaire, 4G/5G), des équipements redondants, et des systèmes d'alimentation de secours. Ces options sont disponibles pour tous nos forfaits professionnels.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-500">
                     <div class="faq-question">
                         <h3>Comment est assuré le support technique pour les entreprises ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -460,7 +435,7 @@
                         <p>Nos clients professionnels bénéficient d'un support technique dédié avec des temps de réponse garantis par SLA (Service Level Agreement). Selon votre forfait, vous avez accès à une assistance 6j/7 ou 24/7 via une ligne prioritaire, email et système de tickets. Pour les offres Enterprise, un technicien dédié est assigné à votre compte.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-600">
                     <div class="faq-question">
                         <h3>Pouvez-vous gérer la migration depuis notre fournisseur actuel ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -476,7 +451,7 @@
     <!-- Section CTA -->
     <section class="cta">
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content animate scale-up">
                 <h2>Prêt à booster la connectivité de votre entreprise ?</h2>
                 <p>Contactez-nous dès aujourd'hui pour une consultation gratuite</p>
                 <a href="../contact/contact.html?type=pro" class="btn btn-primary">Contacter un expert</a>
@@ -485,54 +460,12 @@
     </section>
 
     <!-- Pied de page -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2 class="logo-text botom">H-LINK</h2>
-                    <p>Solutions internet pour particuliers et professionnels</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
-                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
-                        <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                        <li><a href="../compte/compte.html">Compte</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Informations</h3>
-                    <ul>
-                        <li><a href="#">À propos de nous</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                        <li><a href="#">Mentions légales</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
-                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>                            
-                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a></p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="../conf/script.js"></script>
     <script src="../dark-mode/theme-switcher.js"></script>
+    <script src="../conf/inclure.js"></script>
+    <script src="../animations/scroll-animations.js"></script>
     
 </body>
 </html>

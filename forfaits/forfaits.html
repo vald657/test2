@@ -8,42 +8,17 @@
     <link rel="stylesheet" href="../acceuil/styles.css">
     <link rel="stylesheet" href="../forfaits/forfaits.css">
     <link rel="stylesheet" href="../dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="../animations/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <!-- En-tête et Navigation -->
-    <header>
-        <div class="container">
-            <div class="logo-text">
-                <h1>H-LINK</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../forfaits/forfaits.html" class="active">Nos Forfaits</a></li>
-                    <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
-                    <li><a href="../professionnel/professionnel.html">Professionnel</a></li>
-                    <li><a href="../contact/contact.html">Contact</a></li>
-                    <li><a href="../compte/compte.html">Compte</a></li>
-                </ul>
-            </nav>
-            <!-- Ajoutez ce bouton -->
-            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-                <i id="theme-icon" class="fas fa-moon"></i>
-                <span id="theme-text">Mode nuit</span>
-            </button>
-            <div class="burger-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="page-hero pro-hero">
-        <div class="container">
+        <div class="hero-content">
             <h1>Nos Forfaits Internet</h1>
             <p>Des solutions adaptées à tous les besoins et budgets</p>
         </div>
@@ -53,8 +28,8 @@
     <section class="plans-comparison">
         <div class="container">
             <div class="section-header">
-                <h2>Comparez nos forfaits</h2>
-                <p>Trouvez l'offre parfaite qui vous correspond le mieux</p>
+                <h2 class="animate fade-up">Comparez nos forfaits</h2>
+                <p class="animate fade-up delay-200">Trouvez l'offre parfaite qui vous correspond le mieux</p>
             </div>
 
             <div class="plans-filter">
@@ -65,7 +40,7 @@
 
             <div class="plans-grid">
                 <!-- Forfait Starter -->
-                <div id="starter" class="plan-card" data-category="solo">
+                <div id="starter" class="plan-card animate fade-left delay-300" data-category="solo">
                     <div class="plan-header">
                         <h3>Starter</h3>
                         <div class="plan-price">
@@ -90,7 +65,7 @@
                 </div>
 
                 <!-- Forfait Medium -->
-                <div id="medium" class="plan-card featured" data-category="solo coloc">
+                <div id="medium" class="plan-card featured animate scale-up delay-400" data-category="solo coloc">
                     <div class="plan-badge">Le plus populaire</div>
                     <div class="plan-header">
                         <h3>Medium</h3>
@@ -116,7 +91,7 @@
                 </div>
 
                 <!-- Forfait Premium -->
-                <div id="premium" class="plan-card" data-category="solo coloc">
+                <div id="premium" class="plan-card animate fade-right delay-500" data-category="solo coloc">
                     <div class="plan-header">
                         <h3>Premium</h3>
                         <div class="plan-price">
@@ -141,7 +116,7 @@
                 </div>
 
                 <!-- Forfait Ultimate -->
-                <div id="ultimate" class="plan-card" data-category="coloc">
+                <div id="ultimate" class="plan-card animate fade-left delay-300" data-category="coloc">
                     <div class="plan-header">
                         <h3>Ultimate</h3>
                         <div class="plan-price">
@@ -166,7 +141,7 @@
                 </div>
 
                 <!-- Forfait Custom -->
-                <div class="plan-card" data-category="all">
+                <div class="plan-card animate scale-up delay-400" data-category="all">
                     <div class="plan-badge">Offre spéciale</div>
                     <div class="plan-header">
                         <h3>Custom</h3>
@@ -251,8 +226,8 @@
     <section class="technical-comparison">
         <div class="container">
             <div class="section-header">
-                <h2>Comparaison Technique</h2>
-                <p>Détails techniques de nos différents forfaits</p>
+                <h2 class="animate fade-up">Comparaison Technique</h2>
+                <p class="animate fade-up delay-200">Détails techniques de nos différents forfaits</p>
             </div>
             <div class="comparison-table-wrapper">
                 <table class="comparison-table">
@@ -325,11 +300,11 @@
     <section class="faq">
         <div class="container">
             <div class="section-header">
-                <h2>Questions Fréquentes sur nos Forfaits</h2>
-                <p>Tout ce que vous devez savoir avant de souscrire</p>
+                <h2 class="animate fade-up">Questions Fréquentes sur nos Forfaits</h2>
+                <p class="animate fade-up delay-200">Tout ce que vous devez savoir avant de souscrire</p>
             </div>
             <div class="faq-container">
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-300">
                     <div class="faq-question">
                         <h3>Y a-t-il des frais d'activation ou d'installation ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -339,7 +314,7 @@
                             vous et configure tout votre équipement sans frais supplémentaires.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-400">
                     <div class="faq-question">
                         <h3>Puis-je changer de forfait en cours d'abonnement ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -349,7 +324,7 @@
                             inférieur, cela est possible après 3 mois d'abonnement.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item animate fade-right delay-500">
                     <div class="faq-question">
                         <h3>Le modem Wi-Fi est-il inclus dans tous les forfaits ?</h3>
                         <span class="faq-toggle"><i class="fas fa-plus"></i></span>
@@ -365,7 +340,7 @@
     <!-- Section CTA -->
     <section class="cta">
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content animate scale-up">
                 <h2>Besoin d'aide pour choisir ?</h2>
                 <p>Nos conseillers sont là pour vous guider vers le forfait idéal</p>
                 <a href="../contact/contact.html" class="btn btn-primary">Contactez-nous</a>
@@ -374,54 +349,14 @@
     </section>
 
     <!-- Pied de page -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2 class="logo-text botom">H-LINK</h2>
-                    <p>Internet illimité à haut débit</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../forfaits/forfaits.html">Nos Forfaits</a></li>
-                        <li><a href="../comment-ca-marche/comment-ca-marche.html">Comment ça marche</a></li>
-                        <li><a href="../professionnel/professionnel.html">professionnel</a></li>
-                        <li><a href="../contact/contact.html">Contact</a></li>
-                        <li><a href="../compte/compte.html">Compte</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Informations</h3>
-                    <ul>
-                        <li><a href="#">À propos de nous</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                        <li><a href="#">Mentions légales</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Logbessou, IUC / Douala, Cameroun</p>
-                    <p><i class="fas fa-phone"></i><a href="tel:+237657207189">+237 6 57 20 71 89</a></p>                            
-                    <p><i class="fas fa-envelope"></i><a href="mailto:h0rbyvkj@anonaddy.com">h0rbyvkj@anonaddy.com</a></p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 H-Link. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="../conf/script.js"></script>
     <script src="../dark-mode/theme-switcher.js"></script>
+    <script src="../animations/scroll-animations.js"></script>
+    <script src="../conf/inclure.js"></script>
+
+    
 
 </body>
 
